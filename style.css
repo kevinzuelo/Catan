@@ -1,0 +1,422 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    color: white;
+    font: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #712526;
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 3px;
+    border: 1px solid #666;
+    margin: .5em 0;
+}
+
+.button:hover {
+    background: #666;
+    color: #333;
+}
+
+#top {
+    min-height: 450px;
+    color: white;
+    text-align: center;
+}
+
+#top .bgImage {
+    position: absolute;
+    background: #333 url(img/catanPoster.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#visitBg .bgImage {
+    background: #333 url(img/visitTop.jpg);
+}
+
+#top h1 {
+    padding: 100px;
+    padding-bottom: 0;
+}
+
+#top .contentWrap {
+    padding: 0 1.5em;
+}
+
+nav {
+    background: #712526;
+    height: 80px;
+    width: 100%;
+}
+
+#logo {
+    position: absolute;
+    height: 70px;
+    width: auto;
+    float: left;
+    margin-left: 40px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.checkBtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+a.active, a:hover {
+    background: #E3C85C;
+    transition: .5s;
+}
+
+#sectionA .contentWrap {
+    padding: 0 1.5em;
+}
+
+#sectionA {
+    background: white;
+    color: #333;
+    padding-bottom: 2em;
+}
+
+#sectionB {
+    padding: 2em 1em 1em;
+}
+
+#sectionB ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sectionB li {
+    margin-bottom: 1em;
+    background: white;
+    color: #333;
+}
+
+#sectionB li p {
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+.card-content {
+    padding: 1.5em;
+}
+
+#sectionB img {
+    width: 100%;
+    height: auto;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+    grid-column: 2/4;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sectionC {
+    background: white;
+    color: #333;
+    padding: 2em;
+}
+
+#sectionC ul {
+    list-style: none;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-position: inside;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+}
+
+#sectionD .box {
+    padding: 2em;
+    color: white;
+}
+
+#sectionD .box:first-child {
+    background-color: #E3C85C;
+}
+
+#footer {
+    padding: 2em;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    margin-top: 3%;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.container {
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+.sources {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 15px;
+}
+
+.galleryImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.gallery4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.gallery5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gallery6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.source1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.source2 {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.source3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.source4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.source5 {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+@media(min-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+    #sectionA .contentText {
+        columns: 2;
+        column-gap: 2em;
+    }
+    #sectionA .contentText p {
+        padding-top: 0;
+    }
+    .contentWrap, #sectionB ul {
+        grid-column: 2/4;
+    }
+    .box, #footer div {
+        grid-column: span 2;
+    }
+    #sectionB ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    #sectionB li {
+        width: 31%;
+    }
+    #logo {
+        opacity: 100%;
+    }
+    .column {
+        display: block;
+    }
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkBtn {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #E3C85C;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover, a.active {
+        background: none;
+        color: #333;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    .gallery {
+        display: block;
+        justify-content: space-around;
+    }
+    .gallery figure {
+        padding: 20px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

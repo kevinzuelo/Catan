@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myCity.js"></script>
+    <script src="https://kit.fontawesome.com/c73dd3c8f6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    #top .bgImage {
+        position: absolute;
+        background: #333 url(img/ResourcesTop.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 450px;
+        z-index: -1;
+        opacity: 0.7;
+    }
+</style>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkBtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img src="img/newCatanLogo.png" id="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a class="active" href="resources.html">Resources</a></li>
+            <li><a href="photos.html">Photos</a></li>
+        </ul>
+    </nav>
+    <header id="top" class="grid">
+        <div id="bg" class="bgImage"></div>
+        <div class="contentWrap">
+            <h1>Island of Catan</h1>
+            <p>Thinking about planning a trip? What are you waiting for?</p>
+
+        </div>
+        </div>
+
+    </header>
+    <main id="main">
+        <section id="sectionA" class="grid">
+            <div class="contentWrap">
+                <h2 class="contentTitle">Resources</h2>
+                <div class="contentText">
+                    <p>Catan has five main resources as its core resources, ore, brick, sheep, wheat, and wood. The
+                        European Agricultural Report states that there are 72,900 Hectares of woodland on Catan. We are
+                        known for our beautiful forests after all. Along with all of that wood it also states that there
+                        were 270,775 tonnes of Green Maize grown across the island.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="photos">
+            <div class="container">
+                <div class="gallery">
+                    <figure class="source1">
+                        <img src="img/resourceImg/clay.jpg" class="galleryImg">
+                    </figure>
+                    <figure class="source2">
+                        <img src="img/resourceImg/ore.jpg" class="galleryImg">
+                    </figure>
+                    <figure class="source3">
+                        <img src="img/resourceImg/wheat.jpg" class="galleryImg">
+                    </figure>
+                    <figure class="source4">
+                        <img src="img/resourceImg/sheep.jpg" class="galleryImg">
+                    </figure>
+                    <figure class="source5">
+                        <img src="img/resourceImg/wood.jpg" class="galleryImg">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section id="sectionC" class="grid">
+            <div class="contentWrap">
+                <h2 class="contentTitle">So much to offer</h2>
+                <section id="activities">
+                    <ul>
+                        <li>Bird Watching</li>
+                        <li>Hiking</li>
+                        <li>Big Game Fishing</li>
+                        <li>Scuba Diving</li>
+                        <li>Whale Watching</li>
+                        <li>Horseback Riding</li>
+                        <li>Paragliding</li>
+                        <li>Canyoning</li>
+                        <li>Canoeing/Kayaking</li>
+                        <li>Counting Sheep</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <section id="sectionD" class="grid">
+            <div class="box">
+                <h2 class="contentTitle">Travel Award</h2>
+                <p>Having been named the No.1 sustainable tourism destination by Quality Coast, Catan
+                    bettered the Gold Award standard it achieved previously, becoming the first destination ever to
+                    achieve the Platinum Award standard.</p>
+            </div>
+            <div class="box">
+                <h2 class="contentTitle">Contact Us</h2>
+                <p>Please Email us at catan.island@catan.org</p>
+                <p>We will be happy to answer any questions you may have.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="grid">
+        <div>Island of Catan</div>
+        <div>Project by Island of Catan</div>
+    </footer>
+</body>
+
+</html>

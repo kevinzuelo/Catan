@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myCity.js"></script>
+    <script src="https://kit.fontawesome.com/c73dd3c8f6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    #top .bgImage {
+        position: absolute;
+        background: #333 url(img/visitTop.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 450px;
+        z-index: -1;
+        opacity: 0.7;
+    }
+</style>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkBtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img src="img/newCatanLogo.png" id="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="visit.html">Visit</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="photos.html">Photos</a></li>
+        </ul>
+    </nav>
+    <header id="top" class="grid">
+        <div id="bg" class="bgImage"></div>
+        <div class="contentWrap">
+            <h1>Island of Catan</h1>
+            <p>Thinking about planning a trip? What are you waiting for?</p>
+
+        </div>
+        </div>
+
+    </header>
+    <main id="main">
+        <section id="sectionA" class="grid">
+            <div class="contentWrap">
+                <h2 class="contentTitle">Visit Us</h2>
+                <div>
+                    <p>The island's landscape is a sublime mixture of lava rock and exotic vegetation in an ever
+                        changing scenery that envelopes this scarcely populated island. Catan features some of the best
+                        swimming holes in the Atlantic, and every so often an occasional sand beach appears.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sectionB" class="grid">
+            <ul id="location">
+                <li>
+                    <div class="card">
+                        <img src="img/map.jpg">
+                        <div>
+                            <h3>Location</h3>
+                            <p>Our island was discovered when settlers came from Germany and found Catan in the Atlantic
+                                Ocean. Our beautiful island is located southwest of France, take a look at the map
+                                provided as a reference.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="sectionC" class="grid">
+            <div class="contentWrap">
+                <h2 class="contentTitle">Our Score</h2>
+                <p>Here is a table showing how we view our island.</p>
+                <div id="table" class="contentWrap">
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Our Score</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Cost of Living</td>
+                            <td>0</td>
+                            <td>Very expensive</td>
+                        </tr>
+                        <tr>
+                            <td>Crime</td>
+                            <td>3</td>
+                            <td>Very Safe</td>
+                        </tr>
+                        <tr>
+                            <td>Entertainment</td>
+                            <td>1</td>
+                            <td>So-so</td>
+                        </tr>
+                        <tr>
+                            <td>Pollution</td>
+                            <td>3</td>
+                            <td>Very Clean</td>
+                        </tr>
+                        <tr>
+                            <td>Scenery</td>
+                            <td>3</td>
+                            <td>Beautiful</td>
+                        </tr>
+                        <tr>
+                            <td>Taxes</td>
+                            <td>0</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>Transportation</td>
+                            <td>0</td>
+                            <td>Heavy/ No transit</td>
+                        </tr>
+                        <tr>
+                            <td>Weather</td>
+                            <td>2</td>
+                            <td>4 Seasons</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="sectionD" class="grid">
+            <div class="box">
+                <h2 class="contentTitle">Travel Award</h2>
+                <p>Having been named the No.1 sustainable tourism destination by Quality Coast, Catan
+                    bettered the Gold Award standard it achieved previously, becoming the first destination ever to
+                    achieve the Platinum Award standard.</p>
+            </div>
+            <div class="box">
+                <h2 class="contentTitle">Contact Us</h2>
+                <p>Please Email us at catan.island@catan.org</p>
+                <p>We will be happy to answer any questions you may have.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="grid">
+        <div>Island of Catan</div>
+        <div>Project by Island of Catan</div>
+    </footer>
+</body>
+
+</html>
