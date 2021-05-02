@@ -383,6 +383,7 @@ table {
 @media (max-width: 858px) {
     .checkBtn {
         display: block;
+        float: right;
     }
     nav ul {
         position: fixed;
